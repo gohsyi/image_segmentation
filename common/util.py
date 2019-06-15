@@ -1,9 +1,5 @@
-import os
-import sys
-import time
-import logging
+import os, sys, time, logging
 
-from common import args
 from contextlib import contextmanager
 
 
@@ -11,7 +7,7 @@ def split_integers(string):
     return list(map(int, string.split(',')))
 
 
-def get_logger(name, folder=f'logs/{args.note}'):
+def get_logger(name, folder='logs'):
     """
     get a logger with std output and file output
     :param folder: logger folder
@@ -20,7 +16,7 @@ def get_logger(name, folder=f'logs/{args.note}'):
     """
 
     if not os.path.exists(folder):
-        os.mkdir(folder)
+        os.makedirs(folder)
 
     if name in logging.Logger.manager.loggerDict:
         return logging.getLogger(name)

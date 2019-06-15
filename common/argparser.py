@@ -20,16 +20,16 @@ parser.add_argument('-finetune', type=str, default=None)
 parser.add_argument('-save_image', type=str, default='logs/segmentation/')
 
 # segnet setting
-parser.add_argument('loss', type=str, default='dice')
-parser.add_argument('batch_size', type=int, default=5)
-parser.add_argument('total_epoches', type=int, default=int(1e5))
-parser.add_argument('learning_rate', type=float, default=1e-3)
+parser.add_argument('-loss', type=str, default='dice')
+parser.add_argument('-batch_size', type=int, default=5)
+parser.add_argument('-total_epoches', type=int, default=int(1e5))
+parser.add_argument('-learning_rate', type=float, default=1e-3)
 
 # dataset setting
-parser.add_argument('image_h', type=int, default=240)
-parser.add_argument('image_w', type=int, default=240)
-parser.add_argument('image_c', type=int, default=3)
-parser.add_argument('num_classes', type=int, default=20)
+parser.add_argument('-image_h', type=int, default=240)
+parser.add_argument('-image_w', type=int, default=240)
+parser.add_argument('-image_c', type=int, default=3)
+parser.add_argument('-num_classes', type=int, default=20)
 
 args = parser.parse_args()
 

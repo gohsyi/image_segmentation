@@ -1,7 +1,7 @@
 from common import args
 
 from models.segnet import SegNet
-from models.fcn import Model as FCNet
+from models.fcn.fcn import Model as FCNet
 
 
 if args.model == 'segnet':

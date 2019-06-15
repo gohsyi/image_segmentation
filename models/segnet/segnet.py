@@ -34,7 +34,7 @@ class SegNet():
         self.image_w = args.image_w
         self.image_c = args.image_c
         self.num_classes = args.num_classes  # cup, disc, other
-        self.max_steps = args.max_steps
+        self.max_steps = args.total_epoches
         self.batch_size = args.batch_size
         self.image_path = args.train_path
         self.test_path = args.test_path

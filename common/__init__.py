@@ -1,4 +1,3 @@
-from common.argparser import args
+from common.argparser import *
 from common.util import *
-from dataset import Dataset
-from plot import SmoothPlot
+from common.plot import SmoothPlot
